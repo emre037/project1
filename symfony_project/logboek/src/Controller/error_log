@@ -1,0 +1,5 @@
+[29-Apr-2022 14:08:48 UTC] PHP Warning:  require(/home/emreatelierix/public_html/monologger/src/Controller/vendor/autoload.php): Failed to open stream: No such file or directory in /home/emreatelierix/public_html/monologger/src/Controller/run.php on line 3
+[29-Apr-2022 14:08:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/emreatelierix/public_html/monologger/src/Controller/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home/emreatelierix/public_html/monologger/src/Controller/run.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/emreatelierix/public_html/monologger/src/Controller/run.php on line 3

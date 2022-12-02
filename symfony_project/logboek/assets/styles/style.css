@@ -1,0 +1,125 @@
+.logomontix{
+    height: 3em;
+}
+.logomontix1{
+    height: 3em;
+}
+.logboektitel{
+    font-weight: bold;
+    font-size: 2em;
+margin-left: 2em;
+}
+.headermontix{
+    background-color: #222222;
+}
+
+.test {
+    background-color: #222222;
+    position: relative;
+    height: 39em;
+    top: 5px;
+}
+.footer1 {
+    background-color: #222222;
+    position: relative;
+    top: 15em;
+}
+.koptext1{
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+.tekst2{
+    font-size: 24px;
+    margin-top: 14px;
+    color: white;
+}
+.vak1{
+    background-color: #222222;
+    height: 500px;
+}
+
+.vak2{
+    position: absolute;
+    top: 18em;
+    left: 20em;
+}
+.vak3{
+    position: relative;
+    top: 4em;
+    text-align: center;
+    right: 44em;
+}
+.vak4{
+    position: relative;
+    top: -6em;
+    text-align: center;
+    left: 80em;
+}
+.vak5{
+    position: relative;
+}
+.vak7{
+    border-color: #222222;
+    position: relative;
+
+    right: 87%;
+}
+.navtekst{
+    font-weight: bold}
+
+.emailblok{
+    width: 31em;
+    height: 2.5em;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 22px;
+    position: relative;
+    left:32em;
+    top: 2em;
+}
+.vak8{
+    height: 27em;
+}
+.emailblok1{
+    width: 31em;
+    height: 2.5em;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 22px;
+    position: relative;
+    left:32em;
+    top: 4em;
+
+}
+.submitknop{
+    position: relative;
+    top: 6em;
+}
+.tekst3{
+    font-size: 28px;
+    color: white;
+}
+.lijn{
+    position: relative;
+    height: 1px;
+    background-color: #222222;
+    opacity: 0.5;
+}
+.koptext2{
+    font-weight: bold;
+    font-size: 24px;
+}
+.koptext3{
+    font-weight: bold;
+    font-size: 24px;
+}
+.tekst5{
+    font-size: 18px;
+    margin-top: 14px;
+}
+.tekst6{
+    font-size: 18px;
+    margin-top: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLmNzcyIsIm1hcHBpbmdzIjoiOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osUUFBUTtBQUNaO0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsa0JBQWtCO0lBQ2xCLFNBQVM7QUFDYiIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL2Fzc2V0cy9zdHlsZXMvYXBwLmNzcyJdLCJzb3VyY2VzQ29udGVudCI6WyJcblxuLnRlc3Qge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMyMjIyMjI7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIGhlaWdodDogMzllbTtcbiAgICB0b3A6IDVweDtcbn1cbi5mb290ZXIxIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjIyMjIyO1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICB0b3A6IDI4ZW07XG59XG5cbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==*/

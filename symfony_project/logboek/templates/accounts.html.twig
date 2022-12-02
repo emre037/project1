@@ -1,0 +1,129 @@
+{% extends 'admin/index.html.twig' %}
+						
+								{% block content %}
+									<article class="content">
+										{% block content_header_wrapper %}
+											{% set has_help_message = (ea.crud.helpMessage ?? '') is not empty %}
+											<section class="content-header">
+												{% block content_header %}
+													<div class="content-header-title">
+														<p class="title1">
+															{% block content_title %}{% endblock %}
+                                                                        <i class="fa fa-building" aria-hidden="true"></i> Welcome Tesla to the homepage
+															{% block content_help %}
+																{% if has_help_message %}
+																	<a tabindex="0" class="content-header-help" data-bs-toggle="popover" data-bs-custom-class="ea-content-help-popover" data-bs-animation="true" data-bs-html="true" data-bs-placement="bottom" data-bs-trigger="focus" data-bs-content="{{ ea.crud.helpMessage|trans|e('html_attr') }}">
+																		<i class="far fa-question-circle"></i>
+																	</a>
+																{% endif %}
+															{% endblock %}
+														</p>
+													</div>
+
+													{% block page_actions_wrapper %}
+														<div class="page-actions">
+															{% block page_actions %}{% endblock %}
+														</div>
+													{% endblock %}
+												{% endblock content_header %}
+											</section>
+										{% endblock content_header_wrapper %}
+
+										<section id="main" class="content-body">
+											{% block main %}
+												<p class="title2">
+													<i class="fa fa-home" aria-hidden="true"></i>
+													/ Home / Active Plugins
+												</p>
+
+       <section class="u-align-center fadeIn animated u-clearfix u-section-1 content-custom" id="sec-40da">
+		<div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+			<div class="u-expanded-width u-table u-table-responsive ">
+				<table class="u-table-entity u-table-entity-1">
+					<colgroup>
+						<col width="20%">
+						<col width="20%">
+						<col width="20%">
+						<col width="20%">
+						<col width="20%">
+					</colgroup>
+					<thead class="u-grey-70 u-table-header u-table-header-1">
+						<tr style="height: 45px;">
+							<th class="u-table-cell headSection">UserID
+							</th>
+							<th class="u-table-cell headSection">UserLogin
+							</th>
+							<th class="u-table-cell headSection">Email</th>
+							<th class="u-table-cell headSection">Site-Url</th>
+							<th class="u-table-cell headSection">Aangemaakt op</th>
+						</tr>
+					</thead>
+					<tbody
+						class="u-table-alt-grey-5 u-table-body">
+
+						{#                getting the rows from the table wp_users#}
+						{% for user_login in wpUsers %}
+							<tr style="height: 65px;">
+								<td class="u-table-cell tableSection1">{{ user_login.ID }}</td>
+								<td class="u-table-cell tableSection1">{{ user_login.user_login }}</td>
+								<td class="u-table-cell tableSection1">{{ user_login.user_email }}</td>
+								<td class="u-table-cell tableSection1">{{ user_login.user_url  }}</td>
+								<td class="u-table-cell tableSection1">{{ user_login.user_registered  }}</td>
+							</tr>
+						{% else %}
+							<tr>
+								<td colspan="10">no records found</td>
+							</tr>
+						{% endfor %}
+						<tr style="height: 65px;">
+							<td class="u-table-cell tableSection1">0</td>
+							<td class="u-table-cell tableSection1">No record found</td>
+							<td class="u-table-cell tableSection1">No record found</td>
+							<td class="u-table-cell tableSection1">No record found</td>
+							<td class="u-table-cell tableSection1">No record found</td>
+						</tr>
+						<tr style="height: 65px;">
+							<td class="u-table-cell tableSection1">0</td>
+							<td class="u-table-cell tableSection1">No record found</td>
+							<td class="u-table-cell tableSection1">No record found</td>
+							<td class="u-table-cell tableSection1">No record found</td>
+							<td class="u-table-cell tableSection1">No record found</td>
+						</tr>
+						<tr style="height: 65px;">
+							<td class="u-table-cell tableSection1">0</td>
+							<td class="u-table-cell tableSection1">No record found</td>
+							<td class="u-table-cell tableSection1">No record found</td>
+							<td class="u-table-cell tableSection1">No record found</td>
+							<td class="u-table-cell tableSection1">No record found</td>
+						</tr>
+						<tr style="height: 65px;">
+							<td class="u-table-cell"></td>
+							<td class="u-table-cell"></td>
+							<td class="u-table-cell"></td>
+							<td class="u-table-cell"></td>
+							<td class="u-table-cell"></td>
+							<td class="u-table-cell"></td>
+							<td class="u-table-cell"></td>
+							<td class="u-table-cell"></td>
+							<td class="u-table-cell"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+											{% endblock %}
+										</section>
+
+										{% block content_footer_wrapper %}
+											{% set content_footer = block('content_footer') is defined ? block('content_footer') : '' %}
+											{% if content_footer is not empty %}
+												<section class="content-footer">
+													{{ content_footer }}
+												</section>
+											{% endif %}
+										{% endblock %}
+									</article>
+								{% endblock content %}
+
+		

@@ -1,0 +1,71 @@
+{% extends 'secondHeader.html.twig' %}
+
+{% block body %}
+
+    <section class="u-align-center fadeIn animated u-clearfix u-section-1" id="sec-40da">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <div class="u-expanded-width u-table u-table-responsive ">
+                <table class="u-table-entity u-table-entity-1">
+                    <colgroup>
+                        <col width="20%">
+                        <col width="20%">
+                        <col width="20%">
+                        <col width="20%">
+                        <col width="20%">
+                    </colgroup>
+                    <thead class="u-grey-70 u-table-header u-table-header-1">
+                    <tr style="height: 45px;">
+                        <th class="u-table-cell headSection">Change_ID</th>
+                        <th class="u-table-cell headSection">Filename</th>
+                        <th class="u-table-cell headSection">File permission before</th>
+                        <th class="u-table-cell headSection">File permission now</th>
+                        <th class="u-table-cell headSection">Modified on</th>
+                    </tr>
+                    </thead>
+                    <tbody class="u-table-alt-grey-5 u-table-body">
+
+                    {#                getting the rows from the table wp_users #}
+                    {% for i in permissionChanges %}
+                        <tr style="height: 65px;">
+                            <td class="u-table-cell tableSection1">{{ i.Change_ID }}</td>
+                            <td class="u-table-cell tableSection1">{{ i.filename }}</td>
+                            <td class="u-table-cell tableSection1">{{ i.beforeFilepermission }}</td>
+                            <td class="u-table-cell tableSection1">{{ i.afterFilepermission }}</td>
+                            <td class="u-table-cell tableSection1">{{ i.date }}</td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <td colspan="10">no records found</td>
+                        </tr>
+                    {% endfor %}
+
+                    <tr style="height: 65px;">
+                        <td class="u-table-cell"></td>
+                        <td class="u-table-cell"></td>
+                        <td class="u-table-cell"></td>
+                        <td class="u-table-cell"></td>
+                        <td class="u-table-cell">
+                            <div style="height: 5em">
+                                <button class="scanButton" onclick="window.location.href='/start/scanning'"> scan for changes</button>
+                            </div>
+                            <div style="height: 5em">
+                                <button class="scanButton" onclick="window.location.href='/start/refresh'"> reset changes list</button>
+                            </div>
+                        </td>
+                        <td class="u-table-cell"></td>
+                        <td class="u-table-cell"></td>
+                        <td class="u-table-cell"></td>
+                        <td class="u-table-cell"></td>
+
+                    </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+
+    </section>
+
+{% endblock %}

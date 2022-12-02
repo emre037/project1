@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Create an account {% endblock %}
+
+ {% block body %}
+
+     {% if app.user %}
+
+         {% for flash_error in app.flashes('verify_email_error') %}
+             <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+         {% endfor %}
+
+         <div class="section9"></div>
+
+         <div class="text7">
+
+             <h1> Maak een Account aan </h1>
+
+             <div class="text8">
+
+                 {{ form_start(registrationForm) }}
+
+                 {{ form_row(registrationForm.email) }}
+
+                 <div class="text8">
+
+                     {{ form_row(registrationForm.plainPassword, {
+                         label: 'Password'
+
+                     }) }}
+
+                     <div class="text8">
+                         <button class="uppercase hvr-bounce-to-bottom mt-15 bg-orange-500 submitbutton text-gray-100 text-lg w-1/5 mt-10 font-extrabold py-4 px-8 rounded-3xl"
+                                 type="submit">Register
+                         </button>
+                         {{ form_end(registrationForm) }}
+                     </div>
+                 </div>
+             </div>
+
+         </div>
+
+     {% else %}
+
+         <div class="section10 fadeIn animated ">
+             <div class="section11">
+
+                 <p class="text10"> Om gebruik te kunnen maken van het logboek verzoeken wij u eerst in te loggen als
+                     medewerker </p>
+                 <button><a
+                             class="uppercase hvr-bounce-to-bottom mt-15 bg-orange-500 submitbutton1 text-gray-100 text-lg mt-10 font-extrabold py-4 px-8 rounded-3xl"
+                             href="/login"
+                             @click="isOpen = false">
+                         Login
+                     </a>
+                 </button>
+             </div>
+         </div>
+
+     {% endif %}
+
+ {% endblock %}
