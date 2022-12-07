@@ -47,11 +47,11 @@ width: 35%;
 td {
   border-bottom: 1px solid #ddd;
 }
-td:hover {
+/* td:hover {
   background-color: #ebebeb;
   color: black;
   font-weight: 600;
-}
+} */
 .content {
   width: 100%;
 }
@@ -194,3 +194,5 @@ background: linear-gradient(177deg, rgba(32,47,62,1) 0%, rgba(42,63,84,1) 8%, rg
 .dropdown-settings-button:hover {
   opacity: 0.8;
 }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,

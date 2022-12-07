@@ -3,8 +3,7 @@
     "app": {
       "js": [
         "/public/build/runtime.js",
-        "/public/build/vendors-node_modules_core-js_internals_array-method-is-strict_js-node_modules_core-js_modules-52b176.js",
-        "/public/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ar-db55c4.js",
+        "/public/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ar-61004e.js",
         "/public/build/app.js"
       ],
       "css": [
@@ -13,10 +12,7 @@
     },
     "adminjs": {
       "js": [
-        "/public/build/runtime.js",
-        "/public/build/vendors-node_modules_core-js_internals_array-method-is-strict_js-node_modules_core-js_modules-52b176.js",
-        "/public/build/vendors-node_modules_core-js_modules_es_array_for-each_js-node_modules_core-js_modules_es_arr-42fb07.js",
-        "/public/build/adminjs.js"
+        "/public/build/runtime.js"
       ]
     },
     "admin": {
@@ -25,6 +21,11 @@
       ],
       "css": [
         "/public/build/admin.css"
+      ]
+    },
+    "stagecss": {
+      "js": [
+        "/public/build/runtime.js"
       ]
     }
   }

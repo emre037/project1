@@ -53,7 +53,7 @@
 	</head>
 
 	{% block body %}
-		<body {% block body_attr %} {% endblock %} id="{% block body_id %}{% endblock %}" class="ea {% block body_class %}{% endblock %}" data-ea-content-width="{{ ea.crud.contentWidth ?? ea.dashboardContentWidth ?? 'normal' }}" data-ea-sidebar-width="{{ ea.crud.sidebarWidth ?? ea.dashboardSidebarWidth ?? 'normal' }}" data-ea-dark-scheme-is-enabled="{{ ea.dashboardHasDarkModeEnabled ? 'true' : 'false' }}">
+		<body class="content1" {% block body_attr %} {% endblock %} id="{% block body_id %}{% endblock %}" class="ea {% block body_class %}{% endblock %}" data-ea-content-width="{{ ea.crud.contentWidth ?? ea.dashboardContentWidth ?? 'normal' }}" data-ea-sidebar-width="{{ ea.crud.sidebarWidth ?? ea.dashboardSidebarWidth ?? 'normal' }}" data-ea-dark-scheme-is-enabled="{{ ea.dashboardHasDarkModeEnabled ? 'true' : 'false' }}">
 			{% block javascript_page_layout %}
 				<script src="{{ asset('page-layout.js', ea.assets.defaultAssetPackageName) }}"></script>
 			{% endblock javascript_page_layout %}
@@ -361,13 +361,13 @@
 												<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 												<link rel="stylesheet" href="app.scss ">
 												<script src="app.js" type="text/javascript"></script>
-												<section class="cd-hero">
+												<section class="cd-hero ">
 													<ul class="cd-hero-slider">
 														<li class="selected">
 															<div class="cd-full-width">
 																<h2>Wordpress Logger</h2>
 																<p>A logger that can track all the activities happening inside your website.</p>
-																<a href="public/calendar" class="cd-btn">Go to the logger</a>
+																<a href="/public/calendar/index" class="cd-btn">Go to the logger</a>
 															</div>
 															<!-- .cd-full-width -->
 														</li>
@@ -396,8 +396,8 @@
 															<div class="cd-half-width">
 																<h2>Plugin Changes</h2>
 																<p>It tracks actions like uninstalling, installing, disableing, enableling, updating etc.</p>
-																<a href="#0" class="cd-btn">Go</a>
-																<a href="#0" class="cd-btn secondary">Learn More</a>
+																<a href="/public/calendar/index" class="cd-btn">Go</a>
+																<a href="/public/admin" class="cd-btn secondary">Learn More</a>
 															</div>
 															<!-- .cd-half-width -->
 
